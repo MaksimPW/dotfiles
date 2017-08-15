@@ -40,11 +40,17 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" Surround
+Plugin 'tpope/vim-surround'
+
 " Show spaces
 set list
 set listchars=space:ˑ
 hi Whitespace ctermfg=DarkGrey
 match Whitespace /\s/
+
+" Delete excess spaces
+nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
 " Tree
 Plugin 'scrooloose/nerdtree'
