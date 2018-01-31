@@ -8,5 +8,5 @@
   type = cat-file -t
   dump = cat-file -p
 [user]
-	email = mail@maksim.pw
-	name = MaksimPW
+  email = mail@maksim.pw
+  name = MaksimPW
