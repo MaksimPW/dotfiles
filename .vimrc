@@ -31,6 +31,10 @@ syntax on
 Plugin 'slim-template/vim-slim.git'
 autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
 
+" Emmet
+Plugin 'mattn/emmet-vim'
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+
 " Show line numbers
 set nu
 hi LineNr cterm=bold ctermbg=236
