@@ -7,6 +7,7 @@
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   type = cat-file -t
   dump = cat-file -p
+  summary = shortlog --summary --numbered --all --no-merges
 [user]
   email = mail@maksim.pw
   name = MaksimPW

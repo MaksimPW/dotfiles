@@ -3,4 +3,6 @@ alias la='ls -A'
 alias l='ls -CF'
 alias be='bundle exec'
 alias ber='bundle exec rake'
+
 alias gpo='git push origin "$(git symbolic-ref --short HEAD)"'
+alias grebasemaster='git stash && git fetch -p && git rebase -i origin/master'
